@@ -12,3 +12,7 @@ API
 - register : http://localhost:3000/register/  
 - login : http://localhost:3000/login/  
 #paremeter : { "username": "",  "password": "" }  
+
+Edit
+- edit on src floder
+- update to dist with : npx tsc
