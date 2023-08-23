@@ -9,7 +9,7 @@ router.post('/register', async (req: Request, res: Response) => {
     const { username, password } = req.body;
 
     if (!validator.isEmail(username)) {
-        return res.status(400).json({ message: 'Invalid email address' });
+        return res.status(400).json({ message: 'Please enter email address' });
       }
   
     try {

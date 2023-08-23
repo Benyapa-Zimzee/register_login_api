@@ -11,7 +11,7 @@ const router = express_1.default.Router();
 router.post('/register', async (req, res) => {
     const { username, password } = req.body;
     if (!validator_1.default.isEmail(username)) {
-        return res.status(400).json({ message: 'Invalid email address' });
+        return res.status(400).json({ message: 'Please enter email address' });
     }
     try {
         const existingUser = await User_1.default.findOne({ username });
